@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="css/login.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <title>Login page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script defer src="validation.js"></script>
+	<script defer src="script.js"></script>
+ </head>
+ <body>
+    <div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<!--<span class="title"><h4>Login</h4></span>-->
+			<form id="form" class="login" action=" " method="POST" onsubmit="return checkError();">
+				<div class="login__field">
+					<img alt="" class="login__icon" src="./icons8-user-16.png" />
+					<input id="email" name="email" type="text" class="login__input"
+					 placeholder="Email" onkeyup="validate();" required>
+					 
+				</div>
+				<span id="result"></span>
+				<div class="login__field">
+					<img class="login__icon" src="./icons8-lock-16.png" alt="" />
+					<input id="password" name="password" type="password" class="login__input" placeholder="Password">
+				</div>
+				<div class="pass-error">
+					<span id="pass_error"></span>
+				</div>
+				<button id="submit" type="submit" value="Submit request" 
+				class="button login__submit" >
+					<span class="button__text">Log In Now</span>
+					<img class="button__icon" src="./icons8-chevron-24.png" alt="" />
+				</button>				
+			</form>
+			<!--<div class="social-login">
+				<h3>log in via</h3>
+				<div class="social-icons">
+					<a href="#" class="social-login__icon fab fa-instagram"></a>
+					<a href="#" class="social-login__icon fab fa-facebook"></a>
+					<a href="#" class="social-login__icon fab fa-twitter"></a>
+				</div>
+			</div>-->
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+<!--
+<script>
+	function checkError() {
+		var submit = document.getElementById("submit");
+  		if (validateEmail() && password() == true) {
+   		 window.location.href = "index.html";
+  	} else {
+    		document.getElementById("submit").disabled = true;
+ 		 }
+	}
+</script>-->
+ </body>
+</html>
